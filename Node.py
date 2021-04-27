@@ -22,3 +22,9 @@ class Node:
             print(root.value)
             self.inorder(root.right)
 
+    def pre_order(self, root):
+        if root:
+            self.pre_order(root.right)
+            print(root.value)
+            self.pre_order(root.left)
+
