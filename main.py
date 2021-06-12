@@ -3,6 +3,7 @@ from BirthdayPlaces import BirthdayPlaces
 from SweepStakes import SweepStakes
 from Node import Node
 from linkedlist import LinkedList
+from BinarySearch import BinarySearch
 
 if __name__ == '__main__':
     linked_list = LinkedList()
@@ -25,3 +26,11 @@ if __name__ == '__main__':
     trunk = trunk.insert(trunk, 80)
     trunk.inorder(trunk)
     trunk.pre_order(trunk)
+    print('The Binary Search: ')
+    r = BinarySearch(50)
+    r = r.insert(r, 30)
+    r = r.insert(r, 20)
+    r = r.insert(r, 40)
+    r = r.insert(r, 70)
+    r = r.insert(r, 60)
+    r = r.insert(r, 80)

@@ -2,33 +2,12 @@ import random
 
 
 class SweepStakes:
+    contestants = {
+        'name': ['David Paredes', 'Tori Paredes', 'Carlos Paredes', 'Tina Paredes', 'Kim Paredes']
+    }
 
     def pick_winner(self):
-        pick_one = random.choice(Contestants().contestantList)
-        print(pick_one)
+        choices = self.contestants.get('name')
+        winner = random.choice(choices)
+        print(winner)
 
-
-class Contestants:
-
-    contestantList = [
-        {
-             'first_name': 'David',
-             'last_name': 'Paredes'
-        },
-        {
-            'first_name': 'Tori',
-            'last_name': 'Paredes'
-        },
-        {
-            'first_name': 'Tina',
-            'last_name': 'Paredes'
-        },
-        {
-            'first_name': 'Kim',
-            'last_name': 'Paredes'
-        },
-        {
-            'first_name': 'Carlos',
-            'last_name': 'Paredes'
-        }
-    ]
